@@ -72,3 +72,24 @@ SELECT * FROM produtos;
 SELECT DISTINCT categoria
 FROM produtos
 ORDER BY categoria asc;
+
+/*Tarefa 1.4 — Formas de pagamento e canais de venda aceitos 
+Tarefa: Liste, sem repetição, todas as formas de pagamento e, em outra consulta, todos os canais de 
+venda registrados nos pedidos. 
+Evidência esperada: Duas consultas com DISTINCT, uma para cada coluna.
+*/
+
+SELECT * FROM ecommerce_nexashop.pedidos;
+
+/*Separado*/
+SELECT DISTINCT forma_pagamento
+FROM pedidos;
+
+/*Separado*/
+SELECT DISTINCT canal_venda
+FROM pedidos;
+
+/*junto*/
+SELECT DISTINCT forma_pagamento, canal_venda
+FROM pedidos;
+
