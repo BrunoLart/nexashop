@@ -59,3 +59,16 @@ SELECT * FROM produtos;
 
 SELECT nome, categoria, marca, preco AS 'Valor(R$)', estoque
 FROM produtos;
+
+/*Bloco 1 - Tarefa 1.3 — Quantas categorias a loja realmente vende 
+Contexto: A diretoria quer saber quantas categorias de produto a NexaShop trabalha antes de decidir 
+se vale abrir uma nova linha. 
+Tarefa: Liste as categorias de produtos sem repetição, em ordem alfabética. 
+Evidência esperada: Uso correto de DISTINCT combinado com ORDER BY.
+*/
+
+SELECT * FROM produtos;
+
+SELECT DISTINCT categoria
+FROM produtos
+ORDER BY categoria asc;
