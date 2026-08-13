@@ -46,3 +46,16 @@ SELECT *
 FROM produtos
 ORDER BY id
 LIMIT 10;
+
+/*Bloco 1 - Tarefa 1.2 — Catálogo de produtos para o marketing 
+Contexto: O time de marketing pediu uma listagem legível do catálogo, sem colunas técnicas 
+desnecessárias. 
+Tarefa: Liste nome, categoria, marca, preço (com alias "Valor (R$)") e estoque de todos os produtos, 
+sem usar SELECT *. 
+Evidência esperada: Consulta com seleção objetiva de colunas e alias amigável para quem não é da 
+área técnica.
+*/
+SELECT * FROM produtos;
+
+SELECT nome, categoria, marca, preco AS 'Valor(R$)', estoque
+FROM produtos;
